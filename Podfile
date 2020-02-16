@@ -6,5 +6,4 @@ target 'JenkinsFastlaneExample' do
   use_frameworks!
 
   # Pods for JenkinsFastlaneExample
-
 end
