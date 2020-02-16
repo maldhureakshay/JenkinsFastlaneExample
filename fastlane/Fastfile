@@ -2,9 +2,9 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :generate_ipa_develop do
-    build_ios_app(
+    build_app(
       configuration: "Debug",
-      scheme: "Test",
+      scheme: "JenkinsFastlaneExample",
       clean: true,
       export_method: 'development',
       output_directory: "~/Desktop", # Destination directory. Defaults to current directory.
