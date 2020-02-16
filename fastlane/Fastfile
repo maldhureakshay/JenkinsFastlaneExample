@@ -2,6 +2,8 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :generate_ipa_develop do
-      build_app(workspace: "JenkinsFastlaneExample.xcworkspace", scheme: "JenkinsFastlaneExample",include_bitcode: false,configuration: "Debug", export_method: "development",)
+     scan(scheme: "JenkinsFastlaneExample")
+      gym(scheme: 'JenkinsFastlaneExample', export_method: 'development')
+      #build_app(workspace: "JenkinsFastlaneExample.xcworkspace", scheme: "JenkinsFastlaneExample",include_bitcode: false,configuration: "Debug", export_method: "development",)
   end
 end
